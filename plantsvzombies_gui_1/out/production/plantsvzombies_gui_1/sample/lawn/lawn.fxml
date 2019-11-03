@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 
-<Pane fx:id="lawn_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lawn.lawnController">
+<Pane fx:id="lawn_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lawn.lawnController">
     <children>
         <ImageView fitHeight="552.0" fitWidth="1052.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -70,6 +73,11 @@
                 <Image url="@../../resources_not/zombie_football.gif" />
             </image>
         </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="252.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources_not/cherry-bomb.gif" />
+         </image>
+      </ImageView>
         <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="821.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../../resources_not/zombie_football.gif" />
@@ -144,12 +152,8 @@
             <Image url="@../../resources_not/walnut_full_life.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="252.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resources_not/cherry-bomb.gif" />
-         </image>
-      </ImageView>
-      <StackPane fx:id="stackpane_pause" layoutX="246.0" prefHeight="450.0" prefWidth="427.0" visible="false">
+      <ProgressBar layoutX="426.0" layoutY="16.0" prefWidth="200.0" progress="0.64" />
+      <StackPane fx:id="stackpane_pause" layoutX="246.0" prefHeight="450.0" prefWidth="427.0">
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>
@@ -158,9 +162,10 @@
                         <Image url="@../../resources_not/pause.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="45.0" fitWidth="200.0" layoutX="95.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="34.0" fitWidth="200.0" layoutX="95.0" layoutY="234.0" onMouseClicked="#return_to_main_menu" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="65.0" fitWidth="303.0" layoutX="41.0" layoutY="365.0" onMouseClicked="#game_play" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="resume_gam" fitHeight="45.0" fitWidth="200.0" layoutX="93.0" layoutY="147.0" onMouseClicked="#game_play" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="exit_to_menu" fitHeight="34.0" fitWidth="200.0" layoutX="95.0" layoutY="287.0" onMouseClicked="#return_to_main_menu" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="play" fitHeight="65.0" fitWidth="303.0" layoutX="41.0" layoutY="365.0" onMouseClicked="#game_play" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="save_game" fitHeight="34.0" fitWidth="200.0" layoutX="93.0" layoutY="219.0" onMouseClicked="#return_to_main_menu" pickOnBounds="true" preserveRatio="true" />
                </children>
             </Pane>
          </children>
