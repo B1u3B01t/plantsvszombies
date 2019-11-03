@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="main_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="450.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources_not/main_1.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="17.0" layoutY="368.0" mnemonicParsing="false" opacity="0.0" prefHeight="58.0" prefWidth="54.0" />
+      <Button fx:id="user_details" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#popup_user_details" opacity="0.9" prefHeight="49.0" prefWidth="199.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+         </font></Button>
+      <ImageView fx:id="adventure_popup" fitHeight="164.0" fitWidth="236.0" layoutX="389.0" layoutY="68.0" onMouseClicked="#go_to_select_level" onMouseEntered="#change_to_popup" onMouseExited="#change_to_normal" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</Pane>

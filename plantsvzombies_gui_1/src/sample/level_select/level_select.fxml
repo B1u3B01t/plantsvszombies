@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="level_select_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.level_select.level_selectController">
+    <children>
+      <ImageView fitHeight="450.0" fitWidth="800.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources_not/bg_level.PNG" />
+         </image>
+      </ImageView>
+        <ImageView fx:id="level_1" fitHeight="200.0" fitWidth="100.0" layoutX="140.0" layoutY="144.0" onMouseClicked="#go_to_lawn" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources_not/level_select.PNG" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="200.0" fitWidth="100.0" layoutX="252.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources_not/level_select.png" />
+         </image></ImageView>
+        <ImageView fitHeight="200.0" fitWidth="100.0" layoutX="367.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources_not/level_select.png" />
+         </image></ImageView>
+        <ImageView fitHeight="200.0" fitWidth="100.0" layoutX="484.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources_not/level_select.png" />
+         </image></ImageView>
+        <ImageView fitHeight="200.0" fitWidth="100.0" layoutX="599.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources_not/level_select.png" />
+         </image></ImageView>
+      <Button fx:id="back" layoutX="713.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#go_back_main_menu" text="Back" />
+    </children>
+</Pane>

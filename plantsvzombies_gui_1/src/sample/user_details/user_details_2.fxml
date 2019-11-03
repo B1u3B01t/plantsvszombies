@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="user_details_2_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_details.user_details_2Controller">
+    <children>
+        <ImageView fx:id="user_details_2_main" fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources_not/user_name_2.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="create_user" fitHeight="34.0" fitWidth="478.0" layoutX="45.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="rename" fitHeight="34.0" fitWidth="217.0" layoutX="58.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="delete" fitHeight="34.0" fitWidth="217.0" layoutX="314.0" layoutY="340.0" onMouseClicked="#go_back" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ok" fitHeight="34.0" fitWidth="217.0" layoutX="58.0" layoutY="393.0" onMouseClicked="#go_back_main_menu" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cancel" fitHeight="34.0" fitWidth="217.0" layoutX="314.0" layoutY="393.0" onMouseClicked="#go_back_main_menu" pickOnBounds="true" preserveRatio="true" />
+      <TextField layoutX="153.0" layoutY="151.0" prefHeight="34.0" prefWidth="263.0" />
+    </children>
+</Pane>

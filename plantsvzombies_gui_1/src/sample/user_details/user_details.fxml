@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="user_details_1_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.user_details.user_detailsController">
+    <children>
+        <ImageView fx:id="user_detail_1_main" fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources_not/user_name_1.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="create_user" fitHeight="41.0" fitWidth="476.0" layoutX="50.0" layoutY="144.0" onMouseClicked="#create_new_user" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="rename" fitHeight="41.0" fitWidth="223.0" layoutX="61.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ok" fitHeight="41.0" fitWidth="223.0" layoutX="61.0" layoutY="389.0" onMouseClicked="#go_back_main_menu" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="delelte" fitHeight="41.0" fitWidth="223.0" layoutX="312.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cancel" fitHeight="41.0" fitWidth="223.0" layoutX="312.0" layoutY="389.0" onMouseClicked="#go_back_main_menu" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</Pane>
