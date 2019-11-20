@@ -13,10 +13,15 @@
             </image>
         </ImageView>
         <Button layoutX="17.0" layoutY="368.0" mnemonicParsing="false" opacity="0.0" prefHeight="58.0" prefWidth="54.0" />
-      <Button fx:id="user_details" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#popup_user_details" opacity="0.9" prefHeight="49.0" prefWidth="199.0" text="Username" textFill="WHITE">
-         <font>
-            <Font name="Apple Braille Outline 6 Dot" size="24.0" />
-         </font></Button>
       <ImageView fx:id="adventure_popup" fitHeight="164.0" fitWidth="236.0" layoutX="389.0" layoutY="68.0" onMouseClicked="#go_to_select_level" onMouseEntered="#change_to_popup" onMouseExited="#change_to_normal" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="exit" layoutX="421.0" layoutY="209.0" onMouseClicked="#exit_game" prefHeight="66.0" prefWidth="149.0" rotate="8.9" text="EXIT">
+         <font>
+            <Font size="60.0" />
+         </font></Label>
+      <Label fx:id="user_details" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="26.0" onMouseClicked="#popup_user_details" prefHeight="25.0" prefWidth="178.0" text="USERNAME" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
     </children>
 </Pane>

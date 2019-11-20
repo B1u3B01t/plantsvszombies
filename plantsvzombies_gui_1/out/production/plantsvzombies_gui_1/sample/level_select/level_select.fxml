@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="level_select_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.level_select.level_selectController">
+<Pane fx:id="level_select_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.level_select.level_selectController">
     <children>
       <ImageView fitHeight="450.0" fitWidth="800.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -33,5 +35,10 @@
             <Image url="@../../resources_not/level_select.png" />
          </image></ImageView>
       <Button fx:id="back" layoutX="713.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#go_back_main_menu" text="Back" />
+      <Label layoutX="171.0" layoutY="221.0" text="Level 1" textFill="WHITE" />
+      <Label layoutX="283.0" layoutY="222.0" text="Level 2" textFill="WHITE" />
+      <Label layoutX="397.0" layoutY="222.0" text="Level 3" textFill="WHITE" />
+      <Label layoutX="514.0" layoutY="224.0" text="Level 4" textFill="WHITE" />
+      <Label layoutX="630.0" layoutY="225.0" text="Level 5" textFill="WHITE" />
     </children>
 </Pane>
